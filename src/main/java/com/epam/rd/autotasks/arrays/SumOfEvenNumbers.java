@@ -9,9 +9,19 @@ public class SumOfEvenNumbers {
     }
 
     public static int sum(int[] array){
+        int sum1=0;
+        if (array == null || array.length == 0) {
+            return 0;
+        }
+        for (int arr:array
+             ) {
+            if(arr%2==0){
+               sum1+=arr;
+            }
 
-        //put your code here
+        }
+        return sum1;
 
-        throw new UnsupportedOperationException();
+       // throw new UnsupportedOperationException();
     }
 }
